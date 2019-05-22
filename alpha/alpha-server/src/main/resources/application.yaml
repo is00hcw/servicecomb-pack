@@ -82,7 +82,7 @@ spring:
   profiles: mysql
   datasource:
     username: root
-    password: ${mysql.password}
+    password: ${DB_PASSWORD:123456}
     url: jdbc:mysql://mysql-db:3306/saga?useSSL=false
     platform: mysql
     continue-on-error: false
