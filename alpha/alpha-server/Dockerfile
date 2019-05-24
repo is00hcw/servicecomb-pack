@@ -5,6 +5,7 @@ RUN echo "Asia/shanghai" > /etc/timezone && \
     cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 ADD target/saga/alpha-server-0.4.0-exec.jar /app.jar
+ADD target/classes/application.yaml /application.yaml
 
 EXPOSE 8080
 VOLUME /tmp
